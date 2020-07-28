@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+                
+    
+    
+    <wb-module deploy-name="view">
+                                
+        
+        
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+                                
+        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                                
+        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="microprofile-unidade-federativa-service-api-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/microprofile-unidade-federativa-service-api/microprofile-unidade-federativa-service-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="microprofile-municipio-service-api-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/microprofile-municipio-service-api/microprofile-municipio-service-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+                                
+        
+        
+        <property name="java-output-path" value="/payara-mortgage-view/target/classes"/>
+        <property name="context-root" value="view"/>
+                            
+    
+    
+    </wb-module>
+            
+
+
+</project-modules>
