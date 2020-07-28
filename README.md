@@ -1,37 +1,26 @@
-# Mortgage application as set of MicroServices on Payara
+# View application as set of MicroServices on Payara
 
 
-## blacklist-service-api
+## municipio-service-api
 
-Contains the return value of the rest endpoint and the definition of the blacklist service as an interface.
+Contains the return value of the rest endpoint and the definition of the municipio service as an interface.
 
-## blacklist-service
+## municipio-service
 
-Implementation of the blacklist service.
+Implementation of the municipio service.
 
-You can test it by starting the service with **start-blacklist.sh** and calling _http://localhost:8180/blacklist/data/blacklist/<name>_.
+You can test it by starting the service with **start-municipio.sh** and calling _http://localhost:8180/municipio/data/municipio/<name>_.
 
-## interest-service-api
+## unidade-federativa-service-api
  
-Contains the return value of the rest endpoint and the definition of the interest service as an interface.
+Contains the return value of the rest endpoint and the definition of the unidade federativa service as an interface.
 
-## interest-service
+## unidade-federativa-service
 
-Implementation of the interest service.
+Implementation of the unidade federativa service.
 
-You can test it by starting the service with **start-interest.sh** and calling _http://localhost:8280/interest/data/interest/<value>?years=<nbr>
+You can test it by starting the service with **start-unidade-federativa.sh** and calling _http://localhost:8280/unidadefederativa/data/unidadefederativa/<value>?years=<nbr>
 
-## mortgage-service-api
- 
-Contains the return value of the rest endpoint and the definition of the mortgage service as an interface.
-
-## mortgage-service
-
-Implementation of the interest service.
-
-You can test it by starting the service with **start-mortgage.sh** and performing a POST to _http://localhost:8080/mortgage/data/mortgage with
-
-    {"name":"test","value":100000,"years":15}
     
 ## view
 
@@ -39,20 +28,8 @@ Implementation of the JSF View.
 
 ## Start all services
 
-All the services can be started by the **start.sh** and application can be accessed by the URL _http://localhost:8080/mortgage-view/index.xhtml_
+All the services can be started by the **start.sh** and application can be accessed by the URL _http://localhost:8080/view/index.xhtml_
 
-
-## Test
-
-Name : Test
-Amount : 100000
-years : 15
-
-and
-
-Name : Rudy
-Amount : 100000
-years : 15
 
 
 
